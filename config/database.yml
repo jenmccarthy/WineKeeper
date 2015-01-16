@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: vinoapp_development
+
+test:
+  adapter: postgresql
+  database: vinoapp_test
