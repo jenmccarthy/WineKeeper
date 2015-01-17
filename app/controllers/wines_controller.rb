@@ -7,7 +7,23 @@ class WinesController < ApplicationController
     @wine = Wine.new
   end
 
+  def create
+    @wine = Wine.create(wine_params)
+    if @wine.valid?
+      redirect_to root_path
+    else
+      render 'new'
+    end
+  end
+
   def show
     @wine = Wine.find(params[:id])
   end
+
+
+private
+  def wine_params
+    params.require(:wine).permit(:name)
+  end
+
 end
