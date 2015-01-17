@@ -2,7 +2,16 @@
 <div class="form-group">
   <%= f.label "Name" %>
   <%= f.text_field :name %>
-
+  <%= f.label "Region" %>
+  <%= f.text_field :region %>
+  <%= f.label "Year" %>
+  <%= f.text_field :year %>
+  <%= f.label "Alcohol" %>
+  <%= f.text_field :alcohol_content %>
+  <%= f.label "Tasting Notes" %>
+  <%= f.text_area :tasting_notes %>
+  <%= f.label "Type" %>
+  <%= f.collection_select :type_id, Type.all, :id, :name %>
 </div>
 <%= f.submit(:class => "btn btn-primary") %>
 <% end %>
