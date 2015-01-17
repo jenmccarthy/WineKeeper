@@ -1,0 +1,7 @@
+<%= form_for(@wine) do |f| %>
+<div class="form-group">
+  <%= f.label "Name" %>
+  <%= f.text_field :name %>
+</div>
+<%= f.submit(:class => "btn btn-primary") %>
+<% end %>
