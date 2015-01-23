@@ -33,6 +33,11 @@ class WinesController < ApplicationController
     @wine = Wine.find(params[:id])
   end
 
+  def delete
+    @wine = Wine.find(params[:id])
+    @wine.destroy
+  end
+
 
 private
   def wine_params
