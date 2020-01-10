@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+/.blackbox/pubring.gpg~
+/.blackbox/pubring.kbx~
+/.blackbox/secring.gpg
