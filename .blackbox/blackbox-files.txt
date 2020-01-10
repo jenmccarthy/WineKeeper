@@ -1,1 +1,2 @@
+app/views/wines/foo.txt
 secret_file.xml
